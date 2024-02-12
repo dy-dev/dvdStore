@@ -4,11 +4,15 @@ import com.arcreane.entity.Category;
 import com.arcreane.entity.Movie;
 import com.arcreane.service.IMovieService;
 import lombok.Data;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 
 import java.util.Scanner;
 
 @Data
+@Controller
 public class ConsoleMovieController implements IMovieController{
+    @Autowired
     protected IMovieService service;
 
     public void AddMovie(){

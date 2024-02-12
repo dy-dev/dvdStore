@@ -1,11 +1,14 @@
 package com.arcreane.repository;
 
 import com.arcreane.entity.Movie;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+@Repository
 public class PersistantMovieRepository  implements IMovieRepository{
     String filePath = "I:\\Mon Drive\\Ecoles\\Ecole89\\23-24\\MasterJEE\\dvdStore\\movies.csv";
     @Override
