@@ -5,7 +5,7 @@ import com.arcreane.entity.Movie;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ConsoleMovieRepository implements IMovieRepository {
+public class MemoryMovieRepository implements IMovieRepository {
     protected  List<Movie> movieList = new ArrayList<>();
 
     @Override
