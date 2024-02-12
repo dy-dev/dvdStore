@@ -6,7 +6,7 @@ import lombok.Data;
 import org.springframework.stereotype.Controller;
 
 @Data
-@Controller
+//@Controller
 public class WebMovieController implements IMovieController {
     protected IMovieService service;
 

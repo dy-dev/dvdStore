@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 @Data
-@Service
+//@Service
 public class ConsoleMovieService implements IMovieService {
 
     @Autowired
