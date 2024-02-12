@@ -15,4 +15,9 @@ public class Movie {
         category = p_Category;
         nbStocks = 5;
     }
+
+    @Override
+    public String toString() {
+        return id + ';' + name + ';'+ category +';' + nbStocks+'\n';
+    }
 }
