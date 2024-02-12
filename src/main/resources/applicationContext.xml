@@ -7,9 +7,12 @@
        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
        default-autowire="byType">
 
-    <context:annotation-config/>
-    <bean class="com.arcreane.service.ConsoleMovieService"/>
-    <bean class="com.arcreane.repository.PersistantMovieRepository"/>
-    <bean class="com.arcreane.controller.ConsoleMovieController"/>
+    <context:property-placeholder location="application.properties"/>
+    <context:component-scan base-package="com.arcreane.controller.console"/>
+    <context:component-scan base-package="com.arcreane.service.console"/>
+    <context:component-scan base-package="com.arcreane.repository.persistant"/>
+<!--    <bean class="com.arcreane.service.console.ConsoleMovieService"/>-->
+<!--    <bean class="com.arcreane.repository.persistant.PersistantMovieRepository"/>-->
+<!--    <bean class="com.arcreane.controller.console.ConsoleMovieController"/>-->
 
 </beans>

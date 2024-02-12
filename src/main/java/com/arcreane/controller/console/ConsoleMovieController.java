@@ -1,5 +1,6 @@
-package com.arcreane.controller;
+package com.arcreane.controller.console;
 
+import com.arcreane.controller.IMovieController;
 import com.arcreane.entity.Category;
 import com.arcreane.entity.Movie;
 import com.arcreane.service.IMovieService;
@@ -11,7 +12,7 @@ import java.util.Scanner;
 
 @Data
 @Controller
-public class ConsoleMovieController implements IMovieController{
+public class ConsoleMovieController implements IMovieController {
     @Autowired
     protected IMovieService service;
 

@@ -1,10 +1,12 @@
-package com.arcreane.repository;
+package com.arcreane.repository.memory;
 
 import com.arcreane.entity.Movie;
+import com.arcreane.repository.IMovieRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Repository
 public class MemoryMovieRepository implements IMovieRepository {
     protected  List<Movie> movieList = new ArrayList<>();
 
