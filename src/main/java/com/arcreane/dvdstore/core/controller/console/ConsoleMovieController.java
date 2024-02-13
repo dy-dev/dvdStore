@@ -1,9 +1,9 @@
-package com.arcreane.controller.console;
+package com.arcreane.dvdstore.core.controller.console;
 
-import com.arcreane.controller.IMovieController;
-import com.arcreane.entity.Category;
-import com.arcreane.entity.Movie;
-import com.arcreane.service.IMovieService;
+import com.arcreane.dvdstore.core.controller.IMovieController;
+import com.arcreane.dvdstore.core.entity.Category;
+import com.arcreane.dvdstore.core.entity.Movie;
+import com.arcreane.dvdstore.core.service.IMovieService;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

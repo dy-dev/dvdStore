@@ -1,4 +1,4 @@
-package com.arcreane.entity;
+package com.arcreane.dvdstore.core.entity;
 
 import lombok.*;
 
@@ -14,6 +14,14 @@ public class Movie {
         name = p_sName;
         category = p_Category;
         nbStocks = 5;
+    }
+
+    public Movie(String p_dvdAsString) {
+        var infos = p_dvdAsString.split(";");
+        id = infos[0];
+        name = infos[1];
+        category = Category.valueOf(infos[2]);
+        nbStocks = Integer.valueOf(infos[3]);
     }
 
     @Override

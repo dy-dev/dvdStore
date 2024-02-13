@@ -1,4 +1,4 @@
-package com.arcreane.entity;
+package com.arcreane.dvdstore.core.entity;
 
 public enum Category {
     HORROR,
