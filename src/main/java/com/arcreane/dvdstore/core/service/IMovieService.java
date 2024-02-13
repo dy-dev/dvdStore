@@ -11,4 +11,5 @@ public interface IMovieService {
     List<Movie> getAllMovies();
 
     Movie getMovieByName(String pMovieName);
+
 }
